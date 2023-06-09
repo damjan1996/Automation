@@ -1,0 +1,33 @@
+Title: Image Processing Automation
+
+Description:
+This repository contains a Python script designed for batch processing of images.
+It is based on the PIL (Pillow) and rembg libraries, and automates a set of common image processing tasks:
+
+1. Background Removal:
+The script utilizes the rembg package to remove the background from each image.
+This is particularly useful for processing product images or other images where the main object needs to be isolated.
+
+2. Cropping:
+The images are cropped to remove any extra borders around the main object.
+This helps in focusing on the main subject of the image.
+
+3. Resizing:
+All images are resized to maintain a consistent aspect ratio, with a height of 800 pixels, and the width is calculated based on the original image's aspect ratio.
+
+4. Centering:
+The resized image is placed at the center of a new 1000x1000 image with a transparent background.
+This ensures that all processed images have a consistent size and the main object is centrally located.
+
+5. Saving:
+The final images are saved with a resolution of 300 DPI, which is suitable for high-quality print and display purposes.
+
+The script is designed to process all images in a provided directory, saving the processed images to a separate output directory.
+It filters out non-image files and processes images with .jpg, .jpeg, and .png extensions.
+
+To run the script, modify the input_directory and output_directory paths at the end of the script to point to your actual directories.
+
+Please ensure you have the required dependencies installed.
+This script specifically requires the Pillow and rembg Python libraries.
+
+Watch out for future updates and improvements to the script.
